@@ -1,0 +1,96 @@
+h1
+{
+    color: white;
+}
+
+body
+{
+    background-color: #a9f5d0;
+}
+
+#header
+{
+    margin-bottom: 3.5%;
+
+    background-color: #04b486;
+}
+
+.btn-group button
+{
+    color: black;
+    background-color: white;
+}
+
+form
+{
+    width: 25%;
+}
+
+form button
+{
+    width: 100%;
+}
+
+section
+{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 65px;
+}
+
+section button
+{
+    float: right;
+}
+
+section a
+{
+    float: right;
+}
+
+section a:link,
+section a:visited
+{
+    display: inline-block;
+
+    padding: 8px 20px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: black;
+    border: 2px solid #4caf50;
+}
+
+a:hover,
+a:active
+{
+    background-color: #4caf50;
+}
+
+img
+{
+    width: 300px;
+    padding-bottom: 5px;
+}
+
+figcaption
+{
+    width: 300px;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+
+    background-color: #04b486;
+}
+
+footer
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+
+    background-color: #7870cc;
+}
