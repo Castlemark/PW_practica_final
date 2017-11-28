@@ -1,3 +1,26 @@
+var videos = [];
+
+
+function searchVideos(){
+  var text = document.getElementById('buscador').value;
+  var total = 0;
+  document.getElementById("searchRow").innerHTML = '';
+  videos.forEach(function(element, index) {
+    if(element.name.search(text) != -1){
+      total++;
+      document.getElementById("searchRow").appendChild(nodeFromVideo(element));
+    }
+  });
+
+  if(total > 0){
+    document.getElementById("resultados").style.display = "block";
+  }else{
+    document.getElementById("resultados").style.display = "none";
+
+  }
+}
+
+
 function nodeFromVideo(video) {
   var divNode = document.createElement("div");
   divNode.setAttribute("class", "col");
@@ -21,7 +44,6 @@ function nodeFromVideo(video) {
 }
 
 window.onload = function() {
-  var videos = [];
 
   var video1 = {id: "Xhbyj8pqUao", name: "The Velvet Underground, Nico - Sunday Morning", thumbnailServer: "img.youtube.com"};
   var video2 = {id: "nkumhBVPGdg", name: "The Velvet Underground - Sweet Jane", thumbnailServer: "img.youtube.com"};

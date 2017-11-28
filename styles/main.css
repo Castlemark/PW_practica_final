@@ -21,12 +21,12 @@ body
     background-color: white;
 }
 
-form
+#barra
 {
     width: 25%;
 }
 
-form button
+#barra button
 {
     width: 100%;
 }
