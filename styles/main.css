@@ -15,15 +15,26 @@ body
     background-color: #04b486;
 }
 
+.btn-group
+{
+    margin-left: 30%;
+    float: right;
+}
+
 .btn-group button
 {
-    color: black;
     background-color: white;
+    color: black;
+}
+
+#links{
+    clear:both;
+    float:right;
 }
 
 #barra
 {
-    width: 25%;
+    margin-left: 35%;
 }
 
 #barra button
