@@ -1,22 +1,23 @@
 var videos = [];
 
-
-function searchVideos(){
-  var text = document.getElementById('buscador').value;
+function searchVideos() {
+  // Case-insensitive search
+  var text = document.getElementById("buscador").value.toLowerCase();
+  if (text == "") {
+    return;
+  }
   var total = 0;
-  document.getElementById("searchRow").innerHTML = '';
+  document.getElementById("searchRow").innerHTML = "";
   videos.forEach(function(element, index) {
-    if(element.name.search(text) != -1){
+    // Case-insensitive search
+    if (element.name.toLowerCase().indexOf(text) != -1) {
       total++;
       document.getElementById("searchRow").appendChild(nodeFromVideo(element));
     }
   });
-
-  if(total > 0){
-    document.getElementById("resultados").style.display = "block";
-  }else{
-    document.getElementById("resultados").style.display = "none";
-
+  document.getElementById("resultados").style.display = "block";
+  if (total == 0) {
+    document.getElementById("searchRow").appendChild(noResultsFoundNode());
   }
 }
 
@@ -41,6 +42,13 @@ function nodeFromVideo(video) {
   figureNode.appendChild(figcaptionNode);
 
   return divNode;
+}
+
+function noResultsFoundNode() {
+  var pNode = document.createElement("p");
+  var textnode = document.createTextNode("No se han encontrado resultados. Prueba una búsqueda con otras palabras.");
+  pNode.appendChild(textnode);
+  return pNode;
 }
 
 window.onload = function() {

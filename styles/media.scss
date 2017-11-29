@@ -1,0 +1,26 @@
+@media (min-width: 0) and (max-width: 375px)
+{
+    /* iPhone 6 375x667 */
+    section
+    {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 65px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h6 {
+        font-size: 15px;
+    }
+
+    img, figcaption {
+        width: 325px;
+    }
+}

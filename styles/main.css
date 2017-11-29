@@ -1,108 +1,86 @@
-h1
-{
-    color: white;
+h1 {
+  color: white;
 }
 
-body
-{
-    background-color: #a9f5d0;
+body {
+  background-color: #a9f5d0;
 }
 
-#header
-{
-    margin-bottom: 3.5%;
-
-    background-color: #04b486;
+#header {
+  margin-bottom: 3.5%;
+  background-color: #04b486;
 }
 
-.btn-group
-{
-    margin-left: 30%;
-    float: right;
+.btn-group {
+  margin-left: 30%;
+  float: right;
 }
 
-.btn-group button
-{
-    background-color: white;
-    color: black;
+.btn-group button {
+  background-color: white;
+  color: black;
 }
 
-#links{
-    clear:both;
-    float:right;
+#links {
+  clear: both;
+  float: right;
 }
 
-#barra
-{
-    margin-left: 35%;
+#barra {
+  margin-left: 35%;
 }
 
-#barra button
-{
-    width: 100%;
+#barra button {
+  width: 100%;
 }
 
-section
-{
-    width: 60%;
-    margin: auto;
-    margin-bottom: 65px;
+section {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 65px;
 }
 
-section button
-{
-    float: right;
+section button {
+  float: right;
 }
 
-section a
-{
-    float: right;
+section a {
+  float: right;
 }
 
 section a:link,
-section a:visited
-{
-    display: inline-block;
-
-    padding: 8px 20px;
-
-    text-align: center;
-    text-decoration: none;
-
-    color: black;
-    border: 2px solid grey;
-    border-radius: 5px;
+section a:visited {
+  display: inline-block;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border: 2px solid grey;
+  border-radius: 5px;
 }
 
 a:hover,
-a:active
-{
-    background-color: grey;
+a:active {
+  background-color: grey;
 }
 
-img
-{
-    width: 300px;
-    padding-bottom: 5px;
+img {
+  width: 300px;
+  padding-bottom: 5px;
 }
 
-figcaption
-{
-    width: 300px;
-    padding-top: 15px;
-    padding-right: 5px;
-    padding-bottom: 15px;
-    padding-left: 5px;
-
-    background-color: #04a178;
+figcaption {
+  width: 300px;
+  padding-top: 15px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  background-color: #04a178;
 }
 
-footer
-{
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    text-align: center;
-
-    background-color: #7870cc;
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #7870cc;
 }
