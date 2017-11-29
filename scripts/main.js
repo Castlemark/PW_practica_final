@@ -59,7 +59,7 @@ window.onload = function() {
   var video4 = {id: "m3lF2qEA2cw", name: "Creep - Vintage Postmodern Jukebox Radiohead Cover ft. Haley Reinhart", thumbnailServer: "i.ytimg.com"};
 
   var video5 = {id: "arHwjrfIT-M", name: "[Video C] 바닷물에 잠긴 부산 해운대 마린시티", thumbnailServer: "i.ytimg.com"};
-  var video6 = {id: "g83ppI9kqq8", name: "リンカーン芸人大運動会2016 2016.10.05", thumbnailServer: "i.ytimg.com"};
+  var video6 = {id: "TAkpv5AD0yk", name: "リンカーン芸人大運動会2016 2016.10.05", thumbnailServer: "i.ytimg.com"};
   var video7 = {id: "2xhPzlwrNvw", name: "【ゆっくり茶番】殺人パン！？ゆっくり達の文化祭 #1！【たくっち】", thumbnailServer: "i.ytimg.com"};
   var video8 = {id: "IBoOaAVpW2U", name: "【マインクラフト】ガチャガチャ作ってみた！当たるかな!?【ヒカキンのマイクラ実況 Part253】【ヒカクラ】", thumbnailServer: "i.ytimg.com"};
 
@@ -84,7 +84,7 @@ window.onload = function() {
   videos.push(video12);
 
   videos.forEach(function(element, index) {
-    if (index >= 4 && index <= 7) {
+    if (index >= 0 && index <= 7) {
       document.getElementById("vistosRow").appendChild(nodeFromVideo(element));
       return;
     }
