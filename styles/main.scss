@@ -4,124 +4,124 @@ $secondary-color1: #04b486;
 $secondary-color2: #04a178;
 $secondary-color3: #7870cc;
 
-h1
-{
+h1 {
     color: white;
+    font-size: 50px;
 }
 
-body
-{
+body {
     background-color: $primary-color;
 }
 
-#header
-{
+#header {
     margin-bottom: 3.5%;
 
     background-color: $secondary-color1;
 }
 
-
-.btn-group button
-{
+.btn-group button {
     color: black;
     background-color: white;
 }
 
-#formesc
-{
-    width: 25%;
+#form {
+    width: 50%;
+    margin: 0 auto;
 }
 
-#formesc button
-{
+#form button {
     width: 100%;
 }
 
-section
-{
-    width: 60%;
+.form-group {
+    margin-bottom: 5px !important;
+}
+
+#btns {
+    margin: 0 auto;
+    display: inline-flex;
+    font-size: 12px;
+}
+
+#btns > a {
+    margin-left: 2px;
+}
+
+section {
     margin: auto;
     margin-bottom: 65px;
 }
 
-section button
-{
+section button {
     float: right;
 }
 
-section a
-{
+section a {
     float: right;
 }
 
 section a:link,
-section a:visited
-{
+section a:visited {
     display: inline-block;
-
     padding: 8px 20px;
-
     text-align: center;
     text-decoration: none;
-
     color: black;
     border: 2px solid grey;
     border-radius: 5px;
 }
 
 a:hover,
-a:active
-{
+a:active {
     background-color: grey;
 }
 
-section img
-{
+section img, figcaption {
     width: 300px;
+}
+
+section img {
     padding-bottom: 5px;
 }
 
-figcaption
-{
-    width: 300px;
+figcaption {
     padding-top: 15px;
     padding-right: 5px;
     padding-bottom: 15px;
     padding-left: 5px;
-
     background-color: $secondary-color2;
 }
 
-footer
-{
+footer {
     padding-top: 10px;
     padding-bottom: 10px;
-
     text-align: center;
-
     background-color: $secondary-color3;
 }
 
-#menu
-{
+#menu {
     display: none;
 }
 
-#btnmenu
-{
+#btnmenu {
     float: right;
-
     margin-top: 15px;
 }
+
 #formmenu,
 #formmenu .form-group,
-#formmenu button
-{
+#formmenu button {
     width: 100%;
 }
 
-#collapseExample
-{
+#collapseExample {
+    width: 100%;
+}
+
+.mr-auto {
+  width: 100%;
+}
+
+.nav-item {
     width: 100%;
 }

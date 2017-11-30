@@ -19,30 +19,15 @@
     }
 
     section img, figcaption {
-        width: 325px;
+        width: 330px;
     }
-}
 
-@media (min-width: 0px) and (max-width: 735px) {
+    #btns {
+        font-size: 8px;
+        display: block;
+    }
 
-  #menu {
-    display: block;
-  }
-
-  #btnesc {
-    display: none;
-  }
-
-  #formesc {
-    display: none;
-  }
-
-}
-
-@media (min-width: 736px) {
-
-  #collapseExample {
-    display: none;
-  }
-
+    #btn-buscar {
+        background-color: green;
+    }
 }

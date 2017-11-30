@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
@@ -11,78 +10,67 @@
   </head>
   <body>
 
-    <header id="header" class="navbar navbar-default">
-
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#"><h1>Video App</h1></a>
-        </div>
-
-        <div id="formesc" class="navbar-form navbar-left">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search" id="buscador">
-          </div>
-          <button type="submit" class="btn btn-primary" onclick="searchVideos()">Buscar</button>
-        </div>
-
-        <button id="menu" class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-          <img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" alt="menu" width="30">
+    <header id="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+          <h1>Video App</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div id="btnesc" class="btn-group">
-          <a class="btn btn-light" href="#resultados" role="button">Videos</a>
-          <a class="btn btn-light" href="#vistos" role="button">Top Videos</a>
-          <a class="btn btn-light float-right" href="#populares" role="button">Top Popular</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <div id="form" class="navbar-form navbar-left">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search" id="buscador">
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="searchVideos()" id="btn-buscar">Buscar</button>
+              </div>
+            </li>
+          </ul>
+          <!-- Right Side Of Navbar -->
+          <!-- NOTA: Usamos la etiqueta form solo para poder aplicar las clases de bootstrap que permiten alinear un form (típicamente para un buscador) a la derecha -->
+          <form class="form-inline my-2 my-lg-0">
+            <!-- Links -->
+            <div id="btns">
+              <a class="btn btn-light float-right" href="#resultados" role="button">Videos</a>
+              <a class="btn btn-light float-right" href="#vistos" role="button">Top Videos</a>
+              <a class="btn btn-light float-right" href="#populares" role="button">Top Popular</a>
+            </div>
+          </form>
         </div>
-
-        <div class="collapse" id="collapseExample">
-          <div id="formmenu" class="navbar-form">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-primary" onclick="searchVideos()">Buscar</button>
-          </div>
-
-          <div id="btnmenu" class="btn-group">
-            <a class="btn btn-light" href="#resultados" role="button">Videos</a>
-            <a class="btn btn-light" href="#vistos" role="button">Top Videos</a>
-            <a class="btn btn-light float-right" href="#populares" role="button">Top Popular</a>
-            </div>
-          </div>
-
+      </nav>
     </header>
 
-        <section id="resultados" style="display: none">
-          <h2>Resultados de la búsqueda</h2>
-          <ul class="videos">
-            <div class="row justify-content-center" id="searchRow">
-            </div>
-          </ul>
-          <a class="home" href="#header" title="Ver los resultados">Subir</a>
-        </section>
+    <div class="container">
 
-        <section id="vistos">
-          <h2>Videos más vistos</h2>
-          <div class="container">
-            <div class="row justify-content-center" id="vistosRow">
-            </div>
-          </div>
-          <a class="home" href="#header" title="Ver los resultados">Subir</a>
-        </section>
+      <section id="resultados" style="display: none">
+        <h2>Resultados de la búsqueda</h2>
+        <div class="row justify-content-center" id="searchRow">
+        </div>
+        <a class="home" href="#header" title="Ver los resultados">Subir</a>
+      </section>
 
-        <section id="populares">
-          <h2>Videos más populares</h2>
-          <div class="container">
-            <div class="row justify-content-center" id="popularesRow">
-            </div>
-          </div>
-          <a class="home" href="#header" title="Ver los resultados">Subir</a>
-        </section>
+      <section id="vistos">
+        <h2>Videos más vistos</h2>
+        <div class="row justify-content-center" id="vistosRow">
+        </div>
+        <a class="home" href="#header" title="Ver los resultados">Subir</a>
+      </section>
 
-        <footer>
-          <p>Creado por Marc Castells, Cristian González y Pau Nonell para Proyectos Web 1 - &copy; 2016-2017/2018</p>
-        </footer>
+      <section id="populares">
+        <h2>Videos más populares</h2>
+        <div class="row justify-content-center" id="popularesRow">
+        </div>
+        <a class="home" href="#header" title="Ver los resultados">Subir</a>
+      </section>
+
+    </div>
+
+    <footer>
+      <p>Creado por Marc Castells, Cristian González y Pau Nonell para Proyectos Web 1 - &copy; 2016-2017/2018</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

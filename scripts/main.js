@@ -24,7 +24,7 @@ function searchVideos() {
 
 function nodeFromVideo(video) {
   var divNode = document.createElement("div");
-  divNode.setAttribute("class", "col");
+  divNode.setAttribute("class", "col-sm-12 col-md-6 col-lg-4 col-xl-4");
 
   var figureNode = document.createElement("figure");
   divNode.appendChild(figureNode);
