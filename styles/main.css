@@ -11,26 +11,16 @@ body {
   background-color: #04b486;
 }
 
-.btn-group {
-  margin-left: 30%;
-  float: right;
-}
-
 .btn-group button {
-  background-color: white;
   color: black;
+  background-color: white;
 }
 
-#links {
-  clear: both;
-  float: right;
+#formesc {
+  width: 25%;
 }
 
-#barra {
-  margin-left: 35%;
-}
-
-#barra button {
+#formesc button {
   width: 100%;
 }
 
@@ -64,7 +54,7 @@ a:active {
   background-color: grey;
 }
 
-img {
+section img {
   width: 300px;
   padding-bottom: 5px;
 }
@@ -83,4 +73,22 @@ footer {
   padding-bottom: 10px;
   text-align: center;
   background-color: #7870cc;
+}
+
+#menu {
+  display: none;
+}
+
+#btnmenu {
+  float: right;
+  margin-top: 15px;
+}
+
+#formmenu,
+#formmenu .form-group {
+  width: 100%;
+}
+
+#collapseExample {
+  width: 100%;
 }

@@ -6,36 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PW_Práctica final</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/media.css">
   </head>
   <body>
 
-    <header id="header" class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#"><h1>Video App</h1></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <header id="header" class="navbar navbar-default">
 
-      <div class="collapse navbar-collapse row justify-content-end" id="navbarSupportedContent">
-
-        <div id="barra" class="navbar-form navbar-left col">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search" id="buscador">
-          </div>
-          <button type="submit" class="btn btn-primary" onclick="searchVideos()">Submit</button>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><h1>Video App</h1></a>
         </div>
 
-        <div id="links" class="btn-group col">
+        <div id="formesc" class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+        <button id="menu" class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" alt="menu" width="30">
+        </button>
+
+        <div id="btnesc" class="btn-group">
           <a class="btn btn-light" href="#resultados" role="button">Videos</a>
           <a class="btn btn-light" href="#vistos" role="button">Top Videos</a>
           <a class="btn btn-light float-right" href="#populares" role="button">Top Popular</a>
+          </div>
         </div>
 
-      </div>
+        <div class="collapse" id="collapseExample">
+          <form id="formmenu" class="navbar-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+          <div id="btnmenu" class="btn-group">
+            <a class="btn btn-light" href="#resultados" role="button">Videos</a>
+            <a class="btn btn-light" href="#vistos" role="button">Top Videos</a>
+            <a class="btn btn-light float-right" href="#populares" role="button">Top Popular</a>
+            </div>
+          </div>
+
     </header>
+
         <section id="resultados" style="display: none">
           <h2>Resultados de la búsqueda</h2>
           <ul class="videos">
