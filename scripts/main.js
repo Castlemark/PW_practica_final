@@ -27,7 +27,7 @@ function searchVideos() {
 
   ajaxASYNC.request("https://swapi.co/api/people/1/");
 
-  //console.log(People)
+  console.log(People)
 
   var total = 0;
   document.getElementById("searchRow").innerHTML = "";
