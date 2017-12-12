@@ -1,11 +1,34 @@
 var videos = [];
+var People;
+
+//ASYNC
+function reqListener () {
+  //var People = eval(this.responseText);
+  People = JSON.parse(this.responseText);
+  console.log(People);
+}
 
 function searchVideos() {
   // Case-insensitive search
   var text = document.getElementById("buscador").value.toLowerCase();
+
   if (text == "") {
     return;
   }
+
+  var ajaxASYNC = {
+    request: function (url){
+      var xhr = new XMLHttpRequest();
+      xhr.addEventListener("load", reqListener);
+      xhr.open("GET", "https://www.googleapis.com/youtube/v3/search?part=snippet&videoEmbeddable=true&order=viewCount&q=" + text + "&maxResults=10&type=video&videoDefinition=high&key=AIzaSyA4fK-XwuzdoWRTs7l0L9UdVyBz4UHg8ik", true);
+      xhr.send();
+    }
+  };
+
+  ajaxASYNC.request("https://swapi.co/api/people/1/");
+
+  //console.log(People)
+
   var total = 0;
   document.getElementById("searchRow").innerHTML = "";
   videos.forEach(function(element, index) {
@@ -21,6 +44,28 @@ function searchVideos() {
   }
 }
 
+
+function youtubeNode (){
+  var divNode = document.createElement("div");
+  divNode.setAttribute("class", "col-sm-12 col-md-6 col-lg-4 col-xl-4");
+
+  var figureNode = document.createElement("figure");
+  divNode.appendChild(figureNode);
+
+  var imgNode = document.createElement("img");
+  imgNode.setAttribute("src", "https://i.ytimg.com/vi/" + video.id + "/hqdefault.jpg");
+  imgNode.setAttribute("alt", "Vista previa del vídeo llamado " + video.name);
+  figureNode.appendChild(imgNode);
+
+  var figcaptionNode = document.createElement("figcaption");
+  var h6Node = document.createElement("h6");
+  var textnode = document.createTextNode(video.name);
+  h6Node.appendChild(textnode);
+  figcaptionNode.appendChild(h6Node);
+  figureNode.appendChild(figcaptionNode);
+
+  return divNode;
+}
 
 function nodeFromVideo(video) {
   var divNode = document.createElement("div");
