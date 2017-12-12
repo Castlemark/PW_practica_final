@@ -69,6 +69,30 @@ a:active {
   background-color: grey;
 }
 
+figure {
+  overflow: hidden;
+}
+
+figure:hover img {
+  transform: scale(2);
+}
+
+figure:hover figcaption {
+  transform: scaleY(0);
+}
+
+figure, figure img {
+  width: 300px;
+}
+
+figure img {
+  transition: transform 0.5s;
+}
+
+figure figcaption {
+  transition: transform 0.5s;
+}
+
 section img, figcaption {
   width: 300px;
 }
